@@ -495,73 +495,49 @@
     <!-- ##### Product Area End ##### -->
 
     <!-- ##### Subscribe Area Start ##### -->
-    <section class="subscribe-newsletter-area" style="background-image: url(img/bg-img/subscribe.png);">
-        <div class="container">
-            <div class="row align-items-center justify-content-between">
-                <div class="col-12 col-lg-5">
-                    <!-- Section Heading -->
-                    <div class="section-heading mb-0">
-                        <h2>Join the Newsletter</h2>
-                        <p>Subscribe to our newsletter and get all off your first purchase</p>
-                    </div>
-                </div>
-                <div class="col-12 col-lg-6">
-                    <div class="subscribe-form">
-                        <form action="#" method="get">
-                            <input type="email" name="subscribe-email" id="subscribeEmail" placeholder="Enter your email">
-                            <button type="submit" class="btn alazea-btn">SUBSCRIBE</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Subscribe Side Thumbnail -->
-        <div class="subscribe-side-thumb wow fadeInUp" data-wow-delay="500ms">
-            <img class="first-img" src="img/core-img/.png" alt="">
-        </div>
-    </section>
-    <!-- ##### Subscribe Area End ##### -->
+   
 
     <!-- ##### Contact Area Start ##### -->
-    <section class="contact-area section-padding-100-0">
+    <section class="contact-area">
         <div class="container">
             <div class="row align-items-center justify-content-between">
                 <div class="col-12 col-lg-5">
                     <!-- Section Heading -->
                     <div class="section-heading">
-                        <h2>GET IN TOUCH</h2>
-                        <p>Send us a message, we will call back later</p>
+                        <h2 id="title">ENTRER EN CONTACT</h2>
+                        <p>Envoyez-nous un message, nous vous rappellerons le plutot possible</p>
                     </div>
                     <!-- Contact Form Area -->
                     <div class="contact-form-area mb-100">
-                        <form action="#" method="post">
+                        <form id="contact-form" action="send_email.php" method="POST">
                             <div class="row">
-                                <div class="col-12 col-sm-6">
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" id="contact-name" placeholder="Your Name">
-                                    </div>
+                              <div class="col-12 col-md-6">
+                                <div class="form-group">
+                                  <input type="text" class="form-control" id="contact-name" name="name" placeholder="Votre Nom Complet" required>
                                 </div>
-                                <div class="col-12 col-sm-6">
-                                    <div class="form-group">
-                                        <input type="email" class="form-control" id="contact-email" placeholder="Your Email">
-                                    </div>
+                              </div>
+                              <div class="col-12 col-md-6">
+                                <div class="form-group">
+                                  <input type="email" class="form-control" id="contact-email" name="email" placeholder="Votre Email" required>
                                 </div>
-                                <div class="col-12">
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" id="contact-subject" placeholder="Subject">
-                                    </div>
+                              </div>
+                              <div class="col-12">
+                                <div class="form-group">
+                                  <input type="text" class="form-control" id="contact-subject" name="subject" placeholder="Le Sujet" required>
                                 </div>
-                                <div class="col-12">
-                                    <div class="form-group">
-                                        <textarea class="form-control" name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea>
-                                    </div>
+                              </div>
+                              <div class="col-12">
+                                <div class="form-group">
+                                  <textarea class="form-control" name="message" id="message" cols="30" rows="10" placeholder="Message" required></textarea>
                                 </div>
-                                <div class="col-12">
-                                    <button type="submit" class="btn alazea-btn mt-15">Send Message</button>
-                                </div>
+                              </div>
+                              <div class="col-12">
+                                <button  type="submit"  class="btn alazea-btn mt-15">ENVOYER LE MESSAGE</button>
+                              </div>
                             </div>
-                        </form>
+                          </form>
+                          
+                          
                     </div>
                 </div>
 
@@ -601,11 +577,9 @@
                  </div>
                  <p>Le jardin est la prolongation naturelle d'une conception de la vie</p>
                  <div class="social-info">
-                     <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                     <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                     <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
-                     <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                     <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                     <a href="https://www.facebook.com/vernavert/"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                     <a href="https://www.instagram.com/verna_vert/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                     <a href="https://ma.linkedin.com/company/vernavert"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
                  </div>
              </div>
          </div>
